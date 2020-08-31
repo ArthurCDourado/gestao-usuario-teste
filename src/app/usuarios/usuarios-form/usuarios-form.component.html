@@ -1,0 +1,43 @@
+<div class="container mt-5">
+    <mat-card>
+        <div class="row">
+            <div class="col">
+                <h2>Editar Cadastro de Usuário</h2>
+            </div>
+        </div>
+        <form [formGroup]="usuarioForm" novalidate>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="name" placeholder="Nome">
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="sobrenome" placeholder="Sobrenome">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="email" placeholder="Email">
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="username" placeholder="Username">
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+        <div class="row justify-content-end">
+            <div class="col-xl-2 col-md-3 mb-2">
+                <button mat-flat-button color="primary" class="btn-block" [routerLink]="['/usuarios/lista']">Cancelar</button>
+            </div>
+            <div class="col-xl-2 col-md-3 mb-2">
+                <button mat-flat-button color="primary" class="btn-block" [routerLink]="['/usuarios/lista']">Salvar</button>
+            </div>
+        </div>
+    </mat-card>
+</div>

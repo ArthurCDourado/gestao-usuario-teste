@@ -1,0 +1,8 @@
+$dwh-app-primary: mat-palette($mat-deep-purple, 400);
+$dwh-app-accent: mat-palette($mat-pink, A200);
+$dwh-app-warn: mat-palette($mat-red);
+
+$dwh-app-theme: mat-light-theme($dwh-app-primary, $dwh-app-accent, $dwh-app-warn);
+
+@include angular-material-theme($dwh-app-theme);
+

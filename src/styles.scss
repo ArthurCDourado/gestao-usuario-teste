@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import '../node_modules/@angular/material/theming';
+@import '~bootstrap/scss/bootstrap';
+@import 'styles-variables.scss';
+
+@include mat-core();
+
+@import 'themes/data-ware-house-theme.scss';
+
+table, mat-form-field, mat-flat-button {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: $cor-fonte-tags-h1-h2-h3-h4;
+}
+
+p {
+    color: $cor-fonte-tag-p;
+}
+
+.background-gradient {
+    background-image: linear-gradient(180deg, $background-gradient-first-color 0%,$background-gradient-second-color 19.4%);
+}
+
+.custom-button {
+    border-radius: 80px !important;
+    height: 60px;
+    width: 210px;
+}
+
+.custom-button-learn-more {
+    background-color: $custom-button-learn-more-background;
+    color: $custom-button-learn-more-font-color;
+    border-radius: 50px !important;
+    height: 60px;
+    width: 170px;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
