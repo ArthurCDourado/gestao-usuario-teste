@@ -1,6 +1,6 @@
 # GestaoUsuario
 
-Para acessar a parte de gestão do projeto acesse `http://localhost:4200/usuarios/lista` ou http://localhost:4200/about`
+Para acessar a parte de gestão do projeto acesse `http://localhost:4200/usuarios/lista` ou `http://localhost:4200/about`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
